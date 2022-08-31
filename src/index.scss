@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 90%;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(23, 23, 35);
+}
+
+.all-task-wrapper {
+  width: 100%;
+  overflow-y: auto;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-top: 1rem;
+  max-height: 100%;
+}
+
+button {
+  background: transparent;
+  outline: 0;
+  border: 0;
+  padding: 0.5rem;
+}
+
+.form-wrapper {
+  padding: 1rem 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: rgb(36, 39, 61);
+  form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    button {
+      color: rgb(170, 167, 203);
+    }
+    input {
+      width: 100%;
+      font-size: 1.2rem;
+      outline: 0;
+      color: rgb(170, 167, 203);
+      background-color: transparent;
+      border: 0;
+    }
+  }
+}
+
+h1 {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.page-state {
+  width: 100%;
+  height: 5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: rgb(36, 39, 61);
+  color: rgb(170, 167, 203);
+  min-height: 5rem;
+}
+
+@media (max-width: 768px) {
+  .app {
+    width: 96%;
+    height: 96%;
+    justify-content: flex-start;
+  }
+  .left-wrapper {
+    flex-grow: 1;
+    overflow-x: hidden;
+  }
+}
